@@ -1,0 +1,9 @@
+.maincard {
+  margin: 10px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.nameinput {
+  margin: 10px;
+}

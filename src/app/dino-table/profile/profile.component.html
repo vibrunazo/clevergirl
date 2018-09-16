@@ -1,0 +1,137 @@
+<mat-card *ngIf="!dino" class="warning">
+  Could not find a dinossaur named {{name}}!
+</mat-card>
+<mat-card *ngIf="dino" class="mat-body-1">
+  <p>
+    <span [innerHTML]='getDisplayName()'></span> is {{getIntensity()}} {{getAdj()}} {{getRarityName()}} dinosaur! It has {{get('hp')}} hp and {{get('armor')}}%
+    armor. It can do {{get('damage')}} damage with a {{get('crit')}}% crit chance at a speed of {{get('speed')}}.
+  </p>
+  <p *ngIf="isHybrid()">
+      <span [innerHTML]='getDisplayName()'></span> is a hybrid of
+      <span *ngFor="let i of getIngredients(); let isLast=last">
+        <app-dinoname  [name]="i"></app-dinoname>{{isLast ? '.' : ' and '}}
+      </span>
+  </p>
+  <p *ngIf="!isHybrid()">
+      <span [innerHTML]='getDisplayName()'></span> is a pure breed.
+  </p>
+  <p *ngIf="isParent()">
+    <span [innerHTML]='getDisplayName()'></span> is a parent for the {{getHybridNoun()}}
+    <span *ngFor="let h of getHybrids(); let isLast=last">
+        <app-dinoname  [name]="h"></app-dinoname>{{isLast ? '.' : ' and '}}
+    </span>
+       <!-- <span [innerHTML]='getHybrids()'></span>. -->
+  </p>
+  <p *ngIf="!isParent()">
+    <span [innerHTML]='getDisplayName()'></span> is not a parent of any hybrid.
+  </p>
+
+  <div class="groupofcards">
+
+    <mat-card class="portrait">
+          <img [src]="getImageUrl(get('name'))" width="200" height="250" >
+    </mat-card>
+
+
+    <mat-card class="stats mat-body-1">
+      <mat-card-header>
+        <mat-card-title>Stats</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <br>
+      <div class="statgroup">
+        <div class="statsleft">
+          <span *ngFor="let stat of stats" class="stat">
+            <div class="mat-caption statlabel">{{stat}}</div>
+            <div class="mat-caption statvalue">{{get(stat)}}</div>
+          </span>
+        </div>
+        <div class="statsright">
+          <div *ngFor="let stat of stats" class="barline">
+            <mat-progress-bar mode="determinate" [value]="getBar(stat)" class="bar"></mat-progress-bar>
+          </div>
+        </div>
+      </div>
+
+      <div class="dinolevel">
+        <!-- <app-dinolevel value="26" ngDefaultControl></app-dinolevel> -->
+        <mat-slider max="30" min="1" tickInterval="5" thumbLabel [(ngModel)]="level"></mat-slider>level: {{level}}
+      </div>
+
+    </mat-card>
+
+    <mat-card class="moves">
+      <mat-card-header>
+        <mat-card-title>Moves</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <br>
+      <br>
+      <div class="movegroup">
+        <div *ngFor="let move of getMoveNames()">
+          <div class="move">
+            <span>{{move}} </span>
+            <br>
+            <span class="movedetail mat-caption">
+              <span>{{getMoveStats(move, "damage")}}x </span>
+              <span> cd: {{getMoveStats(move, "cooldown")}}</span>
+              <span> delay: {{getMoveStats(move, "delay")}}</span>
+              <span> effect: {{getMoveStats(move, "effect")}}</span>
+              <span> duration: {{getMoveStats(move, "duration")}}</span>
+            </span>
+            <br>
+            <br>
+          </div>
+        </div>
+
+        <div *ngIf="hasPassive()">
+          {{getPassive()}}
+          <br>
+          <span class="movedetail mat-caption">Passive</span>
+        </div>
+
+      </div>
+    </mat-card>
+
+
+    <mat-card class="hybridcard mat-body-1">
+      <mat-card-header>
+        <mat-card-title>Level up Cost</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <br>
+      <div class="hybridcost">
+        To level a
+          <span [innerHTML]='getDisplayName()'></span>
+          to level {{tolevel}}, you will need
+          {{getDNAcost(name)}} <span [innerHTML]='getDisplayName()'></span> DNA.
+          <p *ngIf="isHybrid()">
+              <span *ngFor="let d of getIngredients(); let isLast=last; let i = index">
+                {{getIngcost(d, inglevel[i])}} DNA of <app-dinoname  [name]="d"></app-dinoname>{{isLast ? '.' : ' and '}}
+              </span>
+          </p>
+          <p *ngIf="isHybrid()">
+              <span *ngFor="let d of getIngredients(); let isLast=last; let i = index">
+                <div class="dinolevel">
+                  <mat-slider max="30" min="1" tickInterval="5" thumbLabel [(ngModel)]="inglevel[i]"></mat-slider><app-dinoname [name]="d"></app-dinoname>level: {{inglevel[i]}}
+                </div>
+              </span>
+          </p>
+      </div>
+
+      <div class="dinolevel">
+        <mat-slider max="30" min="1" tickInterval="5" thumbLabel [(ngModel)]="fromlevel"></mat-slider><span [innerHTML]='getDisplayName()'></span>From level: {{fromlevel}}
+      </div>
+      <div class="dinolevel">
+        <mat-slider max="30" min="1" tickInterval="5" thumbLabel [(ngModel)]="tolevel"></mat-slider><span [innerHTML]='getDisplayName()'></span>To level: {{tolevel}}
+      </div>
+
+    </mat-card>
+
+  </div>
+  <a routerLink="/stats">Back to all Dinosaur stats.</a>
+
+</mat-card>

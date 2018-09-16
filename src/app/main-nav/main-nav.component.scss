@@ -1,0 +1,48 @@
+@import '../dinotheme.scss';
+
+$primary: map-get($dinotheme, primary);
+$accent: map-get($dinotheme, accent);
+$warn: map-get($dinotheme, warn);
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(62, 62, 62, 0.24);
+}
+
+.logo img {
+  // display: inline-block;
+  float: left;
+  margin-right: 5px;
+  width: 50px;
+  height: 37px;
+}
+
+
+.heading {
+  font-size: 18px;
+  // color: mat-color($warn);
+}
+
+// mat-icon {
+//   color: mat-color($accent);
+// }
+
+.contentright {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  // height: 100%;
+}
+
+.contentrouter {
+  margin: 10px;
+}
+
+.active {
+  background-color: mat-color($accent, A400) !important;
+  color: mat-contrast($accent, A400)  !important;
+}

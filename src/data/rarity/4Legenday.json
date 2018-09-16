@@ -1,0 +1,416 @@
+{
+  "$type": "RaStDa, x",
+  "devName": "Legendary",
+  "localizedName": "IDS_RARITY_LEGENDARY",
+  "albedoColor": {
+    "a": 10000000,
+    "b": 666666,
+    "g": 392155,
+    "r": 2784312
+  },
+  "emissiveColor": {
+    "a": 10000000,
+    "b": 1098039,
+    "g": 823528,
+    "r": 3450978
+  },
+  "vfxAlbedoColor": {
+    "a": 10000000,
+    "b": 9019606,
+    "g": 6156861,
+    "r": 9725490
+  },
+  "txtcol": {
+    "a": 10000000,
+    "b": 3529410,
+    "g": 980392,
+    "r": 10000000
+  },
+  "back": {
+    "$type": "[Sp]$, x",
+    "guid": "72867546dcf6da247899344f737b31ee",
+    "TypeName": "Sp"
+  },
+  "bLvl": 16,
+  "LabEvolutionTable": [
+    {
+      "$type": "LaEvTa, x",
+      "Level": 1,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 0,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 0
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 2,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 2,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 2
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 3,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 3,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 3
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 4,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 4,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 4
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 5,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 5,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 5
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 6,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 6,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 6
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 7,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 7,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 7
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 8,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 8,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 8
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 9,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 9,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 9
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 10,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 10,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 10
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 11,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 11,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 11
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 12,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 12,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 12
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 13,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 13,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 13
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 14,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 14,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 14
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 15,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 15,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 15
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 16,
+      "PowerCoef": 613899993,
+      "DnaNeeded": 16,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 16
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 17,
+      "PowerCoef": 644599990,
+      "DnaNeeded": 100,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 15000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 18,
+      "PowerCoef": 676800003,
+      "DnaNeeded": 150,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 20000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 19,
+      "PowerCoef": 710699996,
+      "DnaNeeded": 200,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 30000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 20,
+      "PowerCoef": 746200027,
+      "DnaNeeded": 250,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 40000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 21,
+      "PowerCoef": 783499984,
+      "DnaNeeded": 300,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 50000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 22,
+      "PowerCoef": 822699966,
+      "DnaNeeded": 350,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 60000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 23,
+      "PowerCoef": 863799972,
+      "DnaNeeded": 400,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 70000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 24,
+      "PowerCoef": 906999969,
+      "DnaNeeded": 500,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 80000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 25,
+      "PowerCoef": 952399978,
+      "DnaNeeded": 750,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 90000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 26,
+      "PowerCoef": 1000000000,
+      "DnaNeeded": 1000,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 100000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 27,
+      "PowerCoef": 1050000000,
+      "DnaNeeded": 1250,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 120000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 28,
+      "PowerCoef": 1102500000,
+      "DnaNeeded": 1500,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 150000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 29,
+      "PowerCoef": 1157600021,
+      "DnaNeeded": 2000,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 200000
+    },
+    {
+      "$type": "LaEvTa, x",
+      "Level": 30,
+      "PowerCoef": 1215500030,
+      "DnaNeeded": 2500,
+      "Currency": {
+        "$type": "[CuReDa]@, x",
+        "guid": "17b5a8c7983eec540859cc3ef6da211a",
+        "TypeName": "CuReDa"
+      },
+      "CurrencyAmount": 250000
+    }
+  ],
+  "mdo": 0,
+  "op": 4,
+  "Value": 1000,
+  "drone": {
+    "$type": "[DrRaDa]@, x",
+    "guid": "2002a022fecb72640a48baf8d381846c",
+    "TypeName": "DrRaDa"
+  },
+  "meta": 415,
+  "fsfx": {
+    "$type": "[AuEv]$, x",
+    "guid": "f6b81fe8760196f42b758fa3a84c7083",
+    "TypeName": "AuEv"
+  },
+  "usfx": {
+    "$type": "[AuEv]$, x",
+    "guid": "481511f3997b01d44931e132ad7d3844",
+    "TypeName": "AuEv"
+  }
+}

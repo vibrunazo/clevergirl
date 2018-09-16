@@ -1,0 +1,44 @@
+<mat-card>
+  Find out if the player you just battled against was a Bot or Not. Just type the player name and search.
+</mat-card>
+
+<mat-card class="maincard">
+  <mat-card-content>
+    <form class="turing-form" (submit)="onSearch(turingForm)" #turingForm="ngForm">
+
+      <mat-form-field class="nameinput">
+        <input matInput placeholder="Name" ngModel name="name" [matAutocomplete]="auto" #name="ngModel" [(ngModel)]="currentName"
+          (ngModelChange)="allnames = filterNames(currentName)">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of allnames" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+
+      <button mat-raised-button color="accent">Search</button>
+
+      <div [@resultstate]="rstatename" (@resultstate.done)="animationDone($event)">
+        {{ result }}
+      </div>
+
+
+    </form>
+  </mat-card-content>
+
+</mat-card>
+
+<mat-card>
+  <mat-card-title>
+    How does it work?
+  </mat-card-title>
+
+  <mat-card-content>
+    The game generate bot names automatically from a list found in the game APK. <a href="https://puu.sh/AKIle/c6b89b591d" target="_blank">You can see the entire list from the original file here</a>. Bot names are always composed from a combination of a random adjective + a random name from that list, there is never an exception to this rule.
+
+    <p>
+      This app simply looks up if the player name that you typed matches that pattern. The autocomplete from the input will suggest names from that pre-defined list.
+    </p>
+
+  </mat-card-content>
+</mat-card>

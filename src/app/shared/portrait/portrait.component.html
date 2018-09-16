@@ -1,0 +1,14 @@
+<div>
+  <a [routerLink]="getDinoRoute(name)" *ngIf="!target">
+    <img [src]="getImageUrl(name)" width="50" height="60">
+    <span *ngIf="level" class="level">{{level}}</span>
+    <span [innerHTML]='getDisplayName(name, rarity)'></span>
+  </a>
+
+  <a [routerLink]="getDinoRoute(name)" [target]="target" *ngIf="target">
+    <img [src]="getImageUrl(name)" width="50" height="60">
+    <span *ngIf="level" class="level">{{level}}</span>
+    <span [innerHTML]='getDisplayName(name, rarity)'></span>
+  </a>
+
+</div>

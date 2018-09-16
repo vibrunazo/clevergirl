@@ -1,0 +1,12 @@
+.versusbox {
+  display: flex;
+  // width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.versusbox:first-child {
+  color: gold;
+  border: 2px solid red;
+}

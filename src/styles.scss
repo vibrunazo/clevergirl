@@ -1,0 +1,68 @@
+@import 'app/dinotheme.scss';
+
+$primary: map-get($dinotheme, primary);
+$accent: map-get($dinotheme, accent);
+$warn: map-get($dinotheme, warn);
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body { margin: 0; }
+
+.warning {
+  background-color: mat-color($warn);
+}
+
+// a {
+//   color: mat-color($accent);
+//   text-decoration: none;
+// }
+
+// disable gray background when the icon button is focused
+.mat-button,
+.mat-icon-button {
+  &.cdk-focused,
+  &.cdk-program-focused {
+    background-color: none !important;
+
+    .mat-button-focus-overlay {
+      display: none !important;
+    }
+  }
+}
+
+
+.red {
+  color: mat-color($mat-red, A200);
+  font-weight: 600;
+}
+
+.common {
+  color: mat-color($mat-gray, 400) !important;
+  font-weight: 600;
+}
+
+.rare {
+  color: mat-color($mat-blue, 400) !important;
+  font-weight: 600;
+}
+
+.epic {
+  color: mat-color($mat-amber, 400) !important;
+  font-weight: 600;
+}
+
+.legendary {
+  color: mat-color($mat-red, 400) !important;
+  font-weight: 600;
+}
+
+.unique {
+  color: mat-color($mat-green, 400) !important;
+  font-weight: 600;
+}
+

@@ -1,0 +1,192 @@
+@import '../dinotheme.scss';
+
+$primary: map-get($dinotheme, primary);
+$accent: map-get($dinotheme, accent);
+$warn: map-get($dinotheme, warn);
+$green: mat-color($mat-light-green, A400);
+
+.maincard {
+  margin: 10px auto;
+}
+
+.linput {
+  margin-right: 10px;
+}
+
+.soption {
+  color: red !important;
+}
+
+// .skillcard {
+//   // margin-left: 5px;
+//   // margin-right: 5px;
+// }
+
+.skillcard button {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.buffbar {
+  margin-bottom: 5px;
+  font-weight: 400;
+  height: 1.5rem;
+  width: auto;
+  // border: 2px solid red;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buffbar span {
+  // display: inline;
+  font-size: 0.8em;
+  overflow: hidden;
+}
+
+.fatebar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+mat-checkbox {
+  margin: 5px;
+}
+
+.red {
+  color: mat-color($mat-red, A200);
+  font-weight: 600;
+}
+
+.yellow {
+  color: mat-color($mat-yellow, A200);
+  font-weight: 500;
+}
+
+.green {
+  color: $green;
+  font-weight: 500;
+}
+
+.warning {
+  background-color: mat-color($warn);
+}
+
+.right {
+  margin-left: auto;
+}
+
+.fightflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+mat-card-subtitle {
+  width: 100%;
+}
+
+::ng-deep .mat-card-header-text{
+  width: 100%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.8em;
+  margin-top: 10px;
+}
+
+.stats span {
+  text-align: center;
+}
+
+.actionbar {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.actionbar button {
+  min-width: 120px;
+  max-width: 200px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0.8em;
+  padding: 0.8em;
+  white-space: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dinos{
+  // display: grid;
+  display: flex;
+  justify-content: center;
+  // justify-items: center;
+  // grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  margin: auto;
+  width: 100%;
+}
+
+.dinos mat-card-title {
+  max-width: 250px;
+  // border: 2px solid gold;
+
+}
+
+.skillcard {
+  max-width: 280px;
+  padding: 5px;
+  flex: 1 1 400px;
+
+}
+
+.skillcard:first-child {
+  margin-right: 10px;
+}
+
+// app-portrait {
+// }
+
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: $green;
+}
+// ::ng-deep .mat-progress-bar-fill::after {
+//   background-color: #1E457C;
+// }
+
+::ng-deep .mat-progress-bar-buffer {
+  background: mat-color($mat-red, 900);
+}
+
+::ng-deep .mat-progress-bar {
+  border-radius: 4px;
+}
+
+// ::ng-deep .mat-progress-bar-buffer {
+//   border-radius: 4px;
+// }
+
+// mat-progress-bar.my-color .mat-progress-bar-fill::after {
+//   background-color: green;
+// }
+
+.dinolevel {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 -0.5em;
+
+}
+.dinolevel mat-slider {
+  width: 100%;
+  padding: 0;
+  // margin: 0 -20px;
+  // margin: 0 -20px;
+}

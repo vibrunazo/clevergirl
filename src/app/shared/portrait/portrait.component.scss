@@ -1,0 +1,29 @@
+div {
+  // max-width: 100px;
+  display: inline-block;
+}
+
+a {
+  // border: 2px solid red;
+  // text-align: left;
+  // margin: auto;
+  display: flex;
+  align-items: center;
+  // align-content: flex-start;
+  width: 100%;
+  max-width: fit-content;
+  word-break: break-all;
+}
+
+a img {
+  flex-shrink: 0;
+  margin-right: 5px;
+  width: 50px;
+  height: 60px;
+  clip-path: polygon(1% 1%, 88% 1%, 100% 10%, 100% 100%, 1% 100%);
+}
+
+.level {
+  color: #ddd;
+  margin-right: 2px;
+}

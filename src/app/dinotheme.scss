@@ -1,0 +1,28 @@
+@import '~@angular/material/_theming';
+
+@include mat-core();
+
+$dinotheme-primary: mat-palette($mat-gray);
+$dinotheme-accent: mat-palette($mat-amber, 500, 400, 600);
+$dinotheme-warn: mat-palette($mat-red, 600, 500, 700);
+
+$dinotheme: mat-dark-theme($dinotheme-primary, $dinotheme-accent, $dinotheme-warn);
+
+@include angular-material-theme($dinotheme);
+
+$primary: map-get($dinotheme, primary);
+$accent: map-get($dinotheme, accent);
+$warn: map-get($dinotheme, warn);
+
+mat-card a {
+  color: mat-color($accent);
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+mat-toolbar a {
+  color: #333; // mat-color($accent, lighter-contrast);
+}

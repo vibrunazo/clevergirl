@@ -1,0 +1,126 @@
+{
+  "$type": "PlExDB, x",
+  "mxlvl": 20,
+  "lvltb": [
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 1,
+      "nxexp": 0,
+      "cmexp": 0
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 2,
+      "nxexp": 50,
+      "cmexp": 50
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 3,
+      "nxexp": 850,
+      "cmexp": 900
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 4,
+      "nxexp": 4300,
+      "cmexp": 5200
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 5,
+      "nxexp": 11100,
+      "cmexp": 16300
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 6,
+      "nxexp": 15200,
+      "cmexp": 31500
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 7,
+      "nxexp": 30800,
+      "cmexp": 62300
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 8,
+      "nxexp": 51000,
+      "cmexp": 113300
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 9,
+      "nxexp": 74300,
+      "cmexp": 187600
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 10,
+      "nxexp": 120800,
+      "cmexp": 308400
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 11,
+      "nxexp": 152000,
+      "cmexp": 460400
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 12,
+      "nxexp": 186400,
+      "cmexp": 646800
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 13,
+      "nxexp": 223900,
+      "cmexp": 870700
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 14,
+      "nxexp": 264500,
+      "cmexp": 1135200
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 15,
+      "nxexp": 308300,
+      "cmexp": 1443500
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 16,
+      "nxexp": 355300,
+      "cmexp": 1798800
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 17,
+      "nxexp": 405500,
+      "cmexp": 2204300
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 18,
+      "nxexp": 458800,
+      "cmexp": 2663100
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 19,
+      "nxexp": 515100,
+      "cmexp": 3178200
+    },
+    {
+      "$type": "LeEnDa, x",
+      "lvl": 20,
+      "nxexp": 646600,
+      "cmexp": 3824800
+    }
+  ]
+}

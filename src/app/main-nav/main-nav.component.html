@@ -1,0 +1,37 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)" (click)="closeSidenav()">
+    <mat-toolbar color="accent">
+      <a routerLink="/" class="logo">
+        <img src="https://res.cloudinary.com/vibrunazo/image/upload/c_scale,f_auto,q_auto:best,w_50/logo/logo-lines5.png">
+        Clever Girl
+      </a>
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/stats" routerLinkActive="active">Dino Stats</a>
+      <a mat-list-item routerLink="/sim" routerLinkActive="active">Battle Sim</a>
+      <a mat-list-item routerLink="/turing" routerLinkActive="active">Bot or Not</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="contentright">
+    <div class="contenttop">
+      <mat-toolbar color="accent">
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async" class="handsetmenu"
+          #handsetmenu>
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <h1 matcolors="{color: accent}" class="heading">
+          {{heading}}
+        </h1>
+        <!-- workaround so main menu button doesn't glitch -->
+        <button mat-button color="primary"></button>
+      </mat-toolbar>
+      <div class="contentrouter">
+        <ng-content></ng-content>
+      </div>
+    </div>
+    <div class="contentbot">
+      <app-footer></app-footer>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

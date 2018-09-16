@@ -1,0 +1,13 @@
+<mat-card class="mat-body-1">
+  <mat-card-header *ngIf="title">
+    <mat-card-title>
+      <p class="mat-headline">
+        {{title}}
+      </p>
+    </mat-card-title>
+    <mat-card-subtitle *ngIf="date">
+      {{date}}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <ng-content></ng-content>
+</mat-card>

@@ -1,0 +1,60 @@
+<mat-card class="mat-body-1">
+Here you can see all the stats of every Dinosaur in the game. You can sort the table by name, rarity or stats.
+You can change the number of Dinosaurs that show up per page at the paginator at the bottom of the table.
+Click the name of any Dinosaur to open its profile page.
+</mat-card>
+
+<div class="mat-elevation-z8 dino-table">
+  <mat-table #table [dataSource]="dataSource" matSort aria-label="Elements">
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header class="nameheader">Name</mat-header-cell>
+      <mat-cell *matCellDef="let row" class="namecell">
+        <app-portrait [name]="row.name" [rarity]="row.rarity"></app-portrait>
+      </mat-cell>
+    </ng-container>
+
+    <!-- Rarity Column -->
+    <ng-container matColumnDef="rarity">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Rarity</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{getRarityName(row.rarity)}}</mat-cell>
+    </ng-container>
+
+    <!-- HP Column -->
+    <ng-container matColumnDef="hp">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>HP</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.hp}}</mat-cell>
+    </ng-container>
+
+    <!-- HP Column -->
+    <ng-container matColumnDef="armor">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Armor</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.armor}}%</mat-cell>
+    </ng-container>
+
+    <!-- Damage Column -->
+    <ng-container matColumnDef="damage">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Damage</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.damage}}</mat-cell>
+    </ng-container>
+
+    <!-- Crit Column -->
+    <ng-container matColumnDef="crit">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Crit</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.crit}}%</mat-cell>
+    </ng-container>
+
+    <!-- Speed Column -->
+    <ng-container matColumnDef="speed">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Speed</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{row.speed}}</mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+  <mat-paginator #paginator [length]="dataSource.data.length" [pageIndex]="0" [pageSize]="120" [pageSizeOptions]="[10, 20, 50, 100]">
+  </mat-paginator>
+</div>
